@@ -7,6 +7,8 @@ $ adb install TestNatives-release.apk
 adb: failed to install TestNatives-release.apk: Failure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]
 ~~~~
 
+See [this issue](https://github.com/codenameone/CodenameOne/issues/2917) for the motivation.
+
 It will find all .so files in the .aar file, and make dummy .so files for any ABI that is missing.
 
 ## Usage
